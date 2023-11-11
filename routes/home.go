@@ -1,14 +1,25 @@
 package routes
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
+	"portfolia/lib"
 )
 
-func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles("templates/index.html")
-	if err != nil {
-		panic(err)
+func HomeHandler(w http.ResponseWriter, r *http.Request) {
+	files := []string{
+		"templates/parts/base.tmpl",
+		"templates/parts/header.tmpl",
+		"templates/home.tmpl",
 	}
-	tmpl.Execute(w, nil)
+
+	articles := lib.LoadArticles()
+
+	templates := template.Must(template.ParseFiles(files...))
+
+	fmt.Println(articles)
+	if err := templates.ExecuteTemplate(w, "base", articles.Articles); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }

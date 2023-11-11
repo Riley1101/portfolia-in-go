@@ -2,20 +2,11 @@ package main
 
 import (
 	"fmt"
-	"html/template"
 	"net/http"
 	"os"
 	"portfolia/lib"
 	"portfolia/routes"
 )
-
-func indexHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles("templates/index.html")
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-	}
-	tmpl.Execute(w, nil)
-}
 
 func main() {
 	port := os.Getenv("PORT")
@@ -23,8 +14,9 @@ func main() {
 		port = "3000"
 	}
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", routes.IndexHandler)
 
+	lib.ServeStatic(mux, "/assets/", "assets")
+	mux.HandleFunc("/", routes.HomeHandler)
 	loggedMux := lib.NewLogger(mux)
 	fmt.Println("Server started on port " + port)
 	http.ListenAndServe(":"+port, loggedMux)

@@ -1,0 +1,13 @@
+{{define "title"}}Home{{end}}
+
+{{define "main"}}
+    <h2>Latest Snippets</h2>
+    <p>There's nothing to see here yet!</p>
+
+    {{ range .}}
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description}}</p>
+        <p><a href="/article/{{ .Id }}">View</a></p>
+    {{ end }}
+
+{{end}}
