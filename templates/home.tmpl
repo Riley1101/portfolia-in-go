@@ -1,13 +1,27 @@
 {{define "title"}}Home{{end}}
 
 {{define "main"}}
-    <h2>Latest Snippets</h2>
-    <p>There's nothing to see here yet!</p>
 
-    {{ range .}}
-        <h1>{{ .Title }}</h1>
-        <p>{{ .Description}}</p>
-        <p><a href="/article/{{ .Id }}">View</a></p>
-    {{ end }}
+    <section>
+        <h1 class="mb-xs">
+            Hello, I'm <span class="highlight"> Arkar Dev </span>👋
+        </h1>
+        <p>
+            An inspiring software engineer, Coding with a strong passion for design and computer science, I enjoy creating amazing things and building blazingly-fast websites.
+        </p>
+    </section>
+
+    <section>
+        <div class="cols-2">
+            {{ range .}}
+                <div class="card">
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Description}}</p>
+                    <span class="highlight">20 Jun 2023</span>
+                    <p><a href="/article/{{ .Id }}">View</a></p>
+                </div>
+            {{ end }}
+        </div>
+    </section>
 
 {{end}}

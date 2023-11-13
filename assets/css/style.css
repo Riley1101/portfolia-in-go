@@ -1,0 +1,286 @@
+:root {
+  --radius: 5px;
+
+  --text-xs: 0.7rem;
+  --text-sm: 0.9rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+
+  --space-xs: 0.4rem;
+  --space-sm: 0.5em;
+  --space-md: 1em;
+  --space-lg: 2em;
+
+  --bg-color: rgba(255, 255, 255, 1);
+  --text-color: rgba(74, 36, 51, 1);
+  --text-soft-color: rgba(95, 66, 76, 1);
+  --text-strong-color: rgba(74, 74, 74, 1);
+  --subtle-color: rgba(254, 248, 250, 1);
+  --border-color: rgba(251, 224, 233, 1);
+  --shadow-color: rgba(229, 177, 195, 1);
+  --input-color: rgba(255, 255, 255, 1);
+  --outline-color: rgba(237, 175, 197, 1);
+  --mark-color: rgba(234, 53, 143, 0.08);
+  --special-color: rgba(234, 53, 143, 1);
+  --special-bg-color: rgba(241, 55, 148, 1);
+  --special-text-color: rgba(255, 255, 255, 1);
+  --special-shadow-color: rgba(122, 79, 94, 1);
+  --special-mark-color: rgba(255, 255, 255, 0.08);
+  --light-color: rgba(253, 240, 244, 1);
+  --dark-color: rgba(95, 61, 73, 1);
+  --text-color-rgb: 74, 36, 51;
+  --bg-color-rgb: 255, 255, 255;
+  --subtle-color-rgb: 254, 248, 250;
+  --special-color-rgb: 234, 53, 143;
+  --special-text-color-rgb: 255, 255, 255;
+  --special-bg-color-rgb: 241, 55, 148;
+  --shadow-color-rgb: 229, 177, 195;
+  --special-shadow-color-rgb: 122, 79, 94;
+  --outline-color-rgb: 237, 175, 197;
+  --dark-color-rgb: 95, 61, 73;
+  --light-color-rgb: 253, 240, 244;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgba(32, 32, 32, 1);
+    --text-color: rgba(229, 221, 223, 1);
+    --text-soft-color: rgba(194, 185, 188, 1);
+    --text-strong-color: rgba(187, 187, 187, 1);
+    --subtle-color: rgba(43, 34, 37, 1);
+    --border-color: rgba(63, 43, 50, 1);
+    --shadow-color: rgba(0, 0, 0, 1);
+    --input-color: rgba(28, 28, 28, 1);
+    --outline-color: rgba(220, 132, 165, 1);
+    --mark-color: rgba(225, 92, 150, 0.08);
+    --special-color: rgba(225, 92, 150, 1);
+    --special-bg-color: rgba(168, 58, 108, 1);
+    --special-text-color: rgba(229, 221, 223, 1);
+    --special-shadow-color: rgba(43, 25, 32, 1);
+    --special-mark-color: rgba(229, 221, 223, 0.08);
+    --light-color: rgba(242, 201, 215, 1);
+    --dark-color: rgba(71, 45, 55, 1);
+    --text-color-rgb: 229, 221, 223;
+    --bg-color-rgb: 32, 32, 32;
+    --subtle-color-rgb: 43, 34, 37;
+    --special-color-rgb: 225, 92, 150;
+    --special-text-color-rgb: 229, 221, 223;
+    --special-bg-color-rgb: 168, 58, 108;
+    --shadow-color-rgb: 0, 0, 0;
+    --special-shadow-color-rgb: 43, 25, 32;
+    --outline-color-rgb: 220, 132, 165;
+    --dark-color-rgb: 71, 45, 55;
+    --light-color-rgb: 242, 201, 215;
+  }
+}
+
+@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+  :root {
+    --bg-color: rgba(255, 255, 255, 1);
+    --text-color: rgba(51, 23, 34, 1);
+    --text-soft-color: rgba(43, 28, 33, 1);
+    --text-strong-color: rgba(74, 74, 74, 1);
+    --subtle-color: rgba(254, 248, 250, 1);
+    --border-color: rgba(212, 170, 184, 1);
+    --shadow-color: rgba(190, 143, 160, 1);
+    --input-color: rgba(255, 255, 255, 1);
+    --outline-color: rgba(233, 152, 182, 1);
+    --mark-color: rgba(181, 39, 110, 0.16);
+    --special-color: rgba(181, 39, 110, 1);
+    --special-bg-color: rgba(187, 40, 114, 1);
+    --special-text-color: rgba(255, 255, 255, 1);
+    --special-shadow-color: rgba(49, 29, 37, 1);
+    --special-mark-color: rgba(255, 255, 255, 0.16);
+    --light-color: rgba(253, 240, 244, 1);
+    --dark-color: rgba(95, 61, 73, 1);
+    --text-color-rgb: 51, 23, 34;
+    --bg-color-rgb: 255, 255, 255;
+    --subtle-color-rgb: 254, 248, 250;
+    --special-color-rgb: 181, 39, 110;
+    --special-text-color-rgb: 255, 255, 255;
+    --special-bg-color-rgb: 187, 40, 114;
+    --shadow-color-rgb: 190, 143, 160;
+    --special-shadow-color-rgb: 49, 29, 37;
+    --outline-color-rgb: 233, 152, 182;
+    --dark-color-rgb: 95, 61, 73;
+    --light-color-rgb: 253, 240, 244;
+  }
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --bg-color: rgba(32, 32, 32, 1);
+    --text-color: rgba(242, 238, 239, 1);
+    --text-soft-color: rgba(241, 239, 239, 1);
+    --text-strong-color: rgba(187, 187, 187, 1);
+    --subtle-color: rgba(43, 34, 37, 1);
+    --border-color: rgba(93, 76, 82, 1);
+    --shadow-color: rgba(0, 0, 0, 1);
+    --input-color: rgba(28, 28, 28, 1);
+    --outline-color: rgba(219, 127, 163, 1);
+    --mark-color: rgba(233, 151, 181, 0.16);
+    --special-color: rgba(233, 151, 181, 1);
+    --special-bg-color: rgba(137, 45, 87, 1);
+    --special-text-color: rgba(242, 238, 239, 1);
+    --special-shadow-color: rgba(0, 0, 0, 1);
+    --special-mark-color: rgba(242, 238, 239, 0.16);
+    --light-color: rgba(247, 221, 230, 1);
+    --dark-color: rgba(71, 45, 55, 1);
+    --text-color-rgb: 242, 238, 239;
+    --bg-color-rgb: 32, 32, 32;
+    --subtle-color-rgb: 43, 34, 37;
+    --special-color-rgb: 233, 151, 181;
+    --special-text-color-rgb: 242, 238, 239;
+    --special-bg-color-rgb: 137, 45, 87;
+    --shadow-color-rgb: 0, 0, 0;
+    --special-shadow-color-rgb: 0, 0, 0;
+    --outline-color-rgb: 219, 127, 163;
+    --dark-color-rgb: 71, 45, 55;
+    --light-color-rgb: 247, 221, 230;
+  }
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.header__logo {
+  font-size: 1rem;
+  color: var(--special-color);
+}
+.header {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding-inline: var(--space-md);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 0 1px var(--shadow-color);
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-md);
+  list-style-type: none;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--text-sm);
+}
+
+.header__link:hover {
+  color: var(--special-color);
+}
+
+.header__link--active {
+  color: var(--special-color);
+}
+
+.highlight {
+  color: var(--special-color);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+section {
+  padding: var(--space-md);
+}
+
+a {
+  color: var(--special-color);
+}
+
+.card {
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  border: 1px solid var(--mark-color);
+  background-color: var(special-mark);
+  cursor: pointer;
+  box-shadow: 0 0 3px var(--special-shadow-color);
+}
+
+.card:hover {
+  border: 1px solid var(--border-color);
+}
+
+.card h2 {
+  margin-bottom: var(--space-sm);
+  font-size: calc(var(--space-md) * 1.2);
+  color: var(--text-soft-color);
+}
+
+.card p {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.card span {
+  font-size: var(--text-md);
+  color: var(--special-color);
+  text-align: right;
+}
+
+.mb-xs {
+  margin-bottom: var(--space-xs);
+}
+.mb-sm {
+  margin-bottom: var(--space-sm);
+}
+.mb-md {
+  margin-bottom: var(--space-md);
+}
+.mb-lg {
+  margin-bottom: var(--space-lg);
+}
+.cols-2 {
+  display: grid;
+  gap: var(--space-md);
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    gap: var(--space-lg);
+  }
+  main {
+    margin: 0 auto;
+  }
+}
