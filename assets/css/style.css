@@ -1,7 +1,8 @@
 :root {
   --radius: 5px;
 
-  --text-xs: 0.7rem;
+  --text-xxs: 0.4rem;
+  --text-xs: 0.75rem;
   --text-sm: 0.9rem;
   --text-md: 1rem;
   --text-lg: 1.25rem;
@@ -254,8 +255,8 @@ a {
 }
 
 .card span {
-  font-size: var(--text-md);
   color: var(--special-color);
+  font-size: var(--text-xs);
   text-align: right;
 }
 
@@ -271,8 +272,14 @@ a {
 .mb-lg {
   margin-bottom: var(--space-lg);
 }
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-md);
+}
 .cols-2 {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-md);
 }
 

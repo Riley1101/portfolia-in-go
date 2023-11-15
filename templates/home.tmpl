@@ -12,13 +12,16 @@
     </section>
 
     <section>
+        <h2 class="mb-sm">Latest Articles</h2>
         <div class="cols-2">
             {{ range .}}
                 <div class="card">
                     <h2>{{ .Title }}</h2>
                     <p>{{ .Description}}</p>
-                    <span class="highlight">20 Jun 2023</span>
-                    <p><a href="/article/{{ .Id }}">View</a></p>
+                    <div class="flex">
+                        <p><a href="/article/{{ .Id }}">View</a></p>
+                        <span class="highlight date">20 Jun 2023</span>
+                    </div>
                 </div>
             {{ end }}
         </div>
