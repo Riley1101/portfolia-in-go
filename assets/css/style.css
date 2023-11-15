@@ -272,10 +272,10 @@ a {
 .mb-lg {
   margin-bottom: var(--space-lg);
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-md);
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
 }
 .cols-2 {
   display: grid;
