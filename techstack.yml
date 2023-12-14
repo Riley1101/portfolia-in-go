@@ -1,0 +1,66 @@
+repo_name: Riley1101/portfolia-in-go
+report_id: 66fcf1a6620481b838790df34694f3d2
+repo_type: Public
+timestamp: '2023-12-14T10:25:04+00:00'
+requested_by: Riley1101
+provider: github
+branch: main
+detected_tools_count: 5
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: blackfriday
+  description: 'Blackfriday: a markdown processor for Go'
+  package_url: https://pkg.go.dev/github.com/russross/blackfriday
+  version: 1.6.0
+  license: Other
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/Riley1101/portfolia-in-go/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Riley1101
+  last_updated_on: 2023-11-11 07:23:34.000000000 Z
+- name: yaml.v2
+  description: YAML support for the Go language
+  package_url: https://pkg.go.dev/gopkg.in/yaml.v2
+  version: 2.4.0
+  license: LGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/Riley1101/portfolia-in-go/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Riley1101
+  last_updated_on: 2023-11-11 07:23:34.000000000 Z
